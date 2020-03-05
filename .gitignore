@@ -8,3 +8,4 @@ target/
 *.iws
 
 .gitignore
+src/main/java/com/example/cp10http/xml/struct/

@@ -58,10 +58,10 @@ public class GenerateBindXmlUtil {
 
         //- t 指定xml和xsd输出路径 路径。默认路径 .（当前目录,即根目录）。
         args[6] = "-t";
-        args[7] = "./src/main/java/com/example/cp10http/xml/struct/order";
+        args[7] = "./src/main/java/com/example/cp10http/xml/pojo/order";
 
         // 告诉 BindGen 使用下面的类作为 root 生成 binding 和 schema。必须
-        args[8] = "com.example.cp10http.xml.struct.Order";
+        args[8] = "com.example.cp10http.xml.pojo.Order";
 
         BindGen.main(args);
     }
