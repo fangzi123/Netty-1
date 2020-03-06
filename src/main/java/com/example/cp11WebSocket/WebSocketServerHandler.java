@@ -33,6 +33,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
     @Override
     public void messageReceived(ChannelHandlerContext ctx, Object msg) throws Exception {
+        System.out.println("====================>"+msg);
         if (msg instanceof FullHttpRequest) {
             handleHttpRequest(ctx, (FullHttpRequest) msg);
         } else if (msg instanceof WebSocketFrame) {
